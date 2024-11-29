@@ -1,0 +1,476 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: panchangRegular;
+    color: #fff;
+    background-color: #000000;
+
+}
+
+@font-face {
+    font-family: panchangBold;
+    src: url(../css/Panchang_Complete/Panchang_Complete/Fonts/OTF/Panchang-Bold.otf);
+}
+
+@font-face {
+    font-family: panchangRegular;
+    src: url(../css/Panchang_Complete/Panchang_Complete/Fonts/OTF/Panchang-Regular.otf);
+}
+
+
+/* this is my heading section style  */
+header {
+    position: absolute;
+    width: 100%;
+}
+
+header .header-inner {
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000000;
+}
+header .header-inner .join-text{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header .header-inner .join-text span{
+    z-index: 1;
+}
+
+header .header-inner .join-text img {
+    margin-left: -7%;
+    z-index: 0;
+
+}
+#hero {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
+#hero .hero-inner .hero-top {
+    font-size: xx-large;
+    font-weight: 600;
+   margin-top: 25%;
+}
+#hero .hero-inner .hero-bottom {
+    padding-top: 50px;
+     
+}
+#hero .hero-inner .hero-bottom p{
+     padding-top:15%;
+}
+
+#hero .hero-inner .hero-top span {
+    background-image: url(../images/img-bg.png);
+    color: #000000;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* my hero section ends here  */
+/* this is my moving line styles  */
+.moving-line {
+    margin-top: 10%;
+    gap: 20%;
+    margin-left: 50%;
+    width: 4px;
+    height: 100px;
+    background: linear-gradient(to bottom, rgb(212, 255, 0), black);
+    /* colortransitonfromwhitetoblack  */
+    transform: translate(-50%, -50%);
+    animation: moveUpDown 2s infinite ease-in-out;
+    cursor: pointer;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+
+}
+
+/* moving the line up and down  */
+@keyframes moveUpDown {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%);
+    }
+
+    50% {
+        transform: translate(-50%, -45%);
+    }
+}
+
+/* my  moving line styles end here  */
+
+
+
+/* this is my about section style  */
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    color: #fff;
+}
+
+
+#about .about-inner .about-bottom {
+    padding: 5%;
+    margin-top: 5%;
+
+}
+
+#about .about-inner .about-top span {
+    background-image: url(../images/img-bg.png);
+    color: #000000;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* my about section style ends here  */
+
+/* this is my video section style  */
+#video {
+    display: flex;
+    justify-content: center;
+}
+
+#video-inner {
+
+    background-size: cover;
+}
+
+/* my video section style ends here  */
+/* this is my information section style  */
+#information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+}
+
+#information .information-inner {
+    padding: 20px;
+    gap: 5%;
+    background-color: #fff;
+    color: #000000;
+
+}
+
+#information .information-inner p {
+    padding: 5px;
+    background-color: #fff;
+    color: #000000;
+    gap: 5%;
+}
+#information .information-inner h4 {
+    color: #000000;
+    background-color: #fff;
+    font-size: large;
+    font-weight: bold;
+}
+#information .information-inner .join-text {
+    display: flex;
+    justify-content: flex-end;
+   align-items: center;
+   background-color: #fff;
+}
+#information .information-inner .join-text span{
+    z-index: 1;
+}
+
+#information .information-inner .join-text img {
+    margin-left: -7%;
+    z-index: 0;
+    background-color: #fff;
+
+}
+/* my information section style ends here  */
+
+/* this is my peacock section style  */
+.image-gallery {
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.image-container {
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+}
+
+.image-gallery .image-container img {
+    width: 100%;
+    height: auto;
+}
+/* my peacock section style ends here  */
+
+/* this is my service section style  */
+
+#service {
+    display: grid;
+    align-items: center;
+    margin: 3%;
+    }
+    #service h2 span {
+      background-image: url(../images/img-bg.png);
+        background-position: center center;
+        background-size: cover;
+        justify-content: center;
+        padding: 2%;
+        color: #000000;
+    }
+    #service h2{
+       display: flex;
+      justify-content: center;
+       font-size: xx-large;
+       font-weight: bolder;
+      
+    }
+    #service .service-inner {
+        display: flex;
+        padding-top: 4%;
+        align-items: center;
+        
+      }
+      #service .service-inner .service-container h3{
+       font-size: larger;
+       font-weight: bolder;
+      }
+      #service .service-inner .service-container span {
+        background-image: url(../images/img-bg.png);
+        background-position: center;
+        background-size: cover;
+       padding: 2%;
+   
+      }
+
+/* my service section style ends here  */
+
+/* this is my form style section  */
+#form {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 100px;
+    background-color: #fff;
+
+}
+#form .form-inner .form-img span {
+    background-image: url(../images/img-bg.png);
+    background-position: center center;
+    background-size: cover;
+    padding: 3%;
+    background-color: #fff;
+}
+#form .form-inner .form-img h1{
+    background-color: #fff;
+}
+#form .form-inner p {
+   padding-top: 5%;
+   color: rgb(243, 84, 84);
+   background-color: #fff;
+    
+}
+#form .form-inner .form-control {
+    background-color: #fff;
+    color: #fff;
+ 
+}
+#form .form-inner .form-img .form-control .join-text{
+    background-color: #fff;
+}
+
+#form .form-control {
+    padding: 100px;
+    margin-top: 3%;
+  
+}
+#form .form-inner .join-text {
+    display: flex;
+    justify-content: flex-end;
+   align-items: center;
+   background-color: #fff;
+}
+#form .form-inner .join-text span{
+    z-index: 1;
+}
+
+#form .form-inner .join-text img {
+    margin-left: -7%;
+    z-index: 0;
+    background-color: #fff;
+
+}
+/* my form section style ends here  */
+/* this is my blog section style  */
+ #blog {
+ display: grid;
+ align-items: center;
+ margin: 3%;
+ }
+ #blog h2 span {
+    background-image: url(../images/img-bg.png);
+      background-position: center center;
+      background-size: cover;
+      justify-content: center;
+      padding: 3%;
+      color: #000000;
+  }
+  #blog .blog-inner {
+   display: flex;
+   gap: 2%;
+   padding-top: 4%;
+ }
+ #blog .blog-inner .blog-container p{
+     color: rgb(177, 42, 42);
+     font-size: smaller;
+ }
+ #blog .blog-inner .blog-container h4{
+     font-size: large;
+     font-weight: bolder;
+}
+ #blog h2{
+    display: flex;
+   justify-content: center;
+   font-size: x-large;
+   
+ }
+ #blog-inner .blog-container {
+    flex: 0 0 100%;
+    scroll-snap-align: center ;
+ }
+ #blog .blog-container image {
+    width: 100%;
+    height: auto;
+ }
+
+ .footer {
+    display: flex;
+    justify-content: flex-end;
+ } 
+ /* this is my small screen  */
+  @media(min-width:320px){
+    
+        header .header-inner .logo-image{
+            width: 10px;
+        }
+        #hero .hero-inner .hero-top {
+            font-size: medium;
+            font-weight: 300;
+           margin-top: 45%;
+        }
+        #hero .hero-inner .hero-bottom p{
+            padding-top:20%;
+       }
+   
+   #hero .hero-inner .hero-bottom {
+    padding-top: 40px;
+     
+}  
+#hero .hero-inner .hero-bottom div {
+    padding-bottom: 10px;
+     
+} 
+.image-gallery .image-container img {
+    width: 100%;
+    height: auto;
+}
+#service .service-inner {
+    display: grid;
+    padding-top: 4%;
+   justify-content: center;
+    text-align: center;
+  }
+  #blog .blog-inner {
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    }
+    #blog-container {
+        flex: 0 0 100%;
+        scroll-snap-align: center;
+    }
+    #blog h2 span {
+          padding: 1,5%;
+          font-size: medium;
+         
+ }
+ #blog .blog-inner .blog-container p{
+    font-size:xx-small;
+}
+#blog .blog-inner .blog-container h4{
+    font-size: small;
+    font-weight: bolder;
+}
+#blog .blog-container image {
+    width: 100%;
+    height: auto;
+ }
+ #blog .blog-inner {
+    gap: 5%;
+    padding-top: 4%;
+  }
+ 
+    }
+ 
+ /*This is for my ipad screen  */
+ @media(min-width:768px) {
+    #about .about-inner .about-top h1{
+     font-size: small;
+    }
+    #about .about-inner .about-top span h2{
+        font-size: small;
+       }
+     .image-gallery {
+            flex-wrap: wrap;
+            overflow-x: visible;
+        }
+    
+    .image-container {
+            flex: 0 0 25%;
+        }
+    
+  
+    #service .service-inner {
+        display: flex;
+        padding-top: 4%;
+      
+      }
+   
+    .blog{
+        flex-wrap: wrap;
+         overflow-x: visible;
+        }
+        .blog-container {
+            flex: 0 0 16%;
+        }
+       
+}
+@media(min-width:1024px){
+    #blog h2 span {
+        padding: 2;
+        font-size: xx-large;
+        font-weight: bolder;
+       
+}
+#blog .blog-inner .blog-container p{
+    font-size: medium;
+}
+#blog .blog-inner .blog-container h4{
+    font-size: x-large;
+    font-weight: bold;
+}
+}
+
+   
+ 
