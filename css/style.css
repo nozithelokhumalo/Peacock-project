@@ -265,6 +265,10 @@ header .header-inner .join-text img {
     background-color: #fff;
 
 }
+
+#form .form-inner{
+    background: #fff;
+}
 #form .form-inner .form-img span {
     background-image: url(../images/img-bg.png);
     background-position: center center;
